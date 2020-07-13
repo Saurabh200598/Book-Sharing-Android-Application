@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:background="@drawable/bg"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_bottom"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/nav_header_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="8dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:src="@drawable/ic_action_name"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        app:civ_border_color="#ffffff"
+        app:civ_border_width="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/nav_header_image"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/nav_header_image">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="My Profile"
+            android:textSize="18dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+        <TextView
+            android:id="@+id/nav_header_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+919876543210"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
